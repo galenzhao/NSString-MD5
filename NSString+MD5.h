@@ -10,4 +10,6 @@
 
 @interface NSString (MD5)
 - (NSString *)generateMD5:(NSString *)string;
+- (NSString *)MD5;
+
 @end

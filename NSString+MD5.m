@@ -14,7 +14,7 @@
     
     CC_MD5( cStr, strlen(cStr), result );
     
-    return [[NSString
+    return [NSString
              stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
              result[0], result[1],
              result[2], result[3],
@@ -24,6 +24,10 @@
              result[10], result[11],
              result[12], result[13],
              result[14], result[15]
-             ]];
+             ];
+}
+- (NSString *)MD5
+{
+    return [self generateMD5:self];
 }
 @end
